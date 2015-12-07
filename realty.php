@@ -10,10 +10,10 @@ $objekt = $q->findPk($_GET['id']);
 
 <h1>Objektdetail</h1>
 
-<h2><?php echo $objekt->getTitle() ?></h2>
+<h2><?php echo $objekt->getTitle(); ?></h2>
 
-<?php echo $objekt->getDescription() ?>
-
+<?php echo $objekt->getDescription(); ?>
+<?php echo $objekt->getCategories(); ?>
 <?php foreach ($objekt->getAttachments() as $attachment): ?>
     <img src="<?php echo $attachment->getUrl() ?>" style="max-width: 150px;" />
 <?php endforeach; ?>

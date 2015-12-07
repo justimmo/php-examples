@@ -7,4 +7,4 @@ JUSTIMMO PHP-SDK Examples
 $ git clone https://github.com/justimmo/php-examples.git
 $ composer update
 ```
-edit config.php and insert your username and password
+Edit config.php and insert your JUSTIMMO API username and password.

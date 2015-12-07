@@ -9,7 +9,7 @@ $q       = new \Justimmo\Model\RealtyQuery($api, new \Justimmo\Model\Wrapper\V1\
 $pager = $q->paginate($page, 10);
 
 ?>
-<h1>Objekte</h1>
+<h1>Objektanzahl: <?php echo $pager->getNbResults(); ?></h1>
 
 <ul style="list-style: none">
     <?php /** @var \Justimmo\Model\Realty $objekt */ ?>
@@ -20,7 +20,7 @@ $pager = $q->paginate($page, 10);
                 <img src="<?php echo $picture->calculateUrl('small'); ?>" width="100" height="75"/>
                 <?php break; ?>
             <?php endforeach; ?>
-            <a href="realty.php?id=<?php echo $objekt->getId() ?>">
+            <a href="realty.php?id=<?php echo $objekt->getId(); ?>">
                 <?php echo $objekt->getTitle(); ?>
             </a>
         </li>
