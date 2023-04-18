@@ -12,6 +12,9 @@ include_once('config.php');
         <a href="projects.php">Projekte</a>
     </li>
     <li>
+        <a href="team.php">Team</a>
+    </li>
+    <li>
         <a href="test1.php">Tests</a>
     </li>
     <li>
